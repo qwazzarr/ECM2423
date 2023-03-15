@@ -2,8 +2,6 @@
 import sys
 from PIL import Image, ImageDraw
 from tqdm import tqdm
-import heapq
-import math
 from dfs import dfs
 from a_star import a_star
 from list_transform import list_transform

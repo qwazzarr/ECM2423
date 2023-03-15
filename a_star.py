@@ -37,6 +37,7 @@ def a_star(maze):
         return valid_neighbors
     
     def is_valid(pos):
+        """ Check if the node is valid"""
         row, col = pos
         if 0 <= row < len(maze) and 0 <= col < len(maze[0]) and maze[row][col] == '-':
             return True
@@ -61,7 +62,7 @@ def a_star(maze):
         
         return path , paths.keys()
     
-    
+    #initiate g_score and f_score 
     g_score = {start:0}
     f_score = {start: heuristic(start,end)}
     
