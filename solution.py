@@ -88,6 +88,8 @@ if __name__ == "__main__":
                 gif = True
             else:
                 gif = False
+        else:
+            gif = False
     except ValueError:
         print("Arguments should be strings.")
         sys.exit(1)
