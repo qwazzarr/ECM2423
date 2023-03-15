@@ -86,7 +86,8 @@ if __name__ == "__main__":
         file_name = str(sys.argv[1])
         algorithm  = str(sys.argv[2])
         if(len(sys.argv) == 4):
-            gif = bool(sys.argv[3])
+            if(sys.argv[3] == "True"):
+                gif = True
         else:
             gif = False
     except ValueError:
